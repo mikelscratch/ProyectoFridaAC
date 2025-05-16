@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Frida AC - adopta a un angel</title><!-- Cambio->
+        <!- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'Principal/assets/favicon.ico' %}" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'Principal/css/styles.css' %}" rel="stylesheet" /> 
+    </head>  
+
+
+      <body id="page-top">
+          <!-- Inicio cambios de navegación-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a href="{% url 'Principal' %}"><img src="{% static 'Principal/assets/img/frida ac logo.png' %}"width="120" height="120"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item" ><a class="nav-link" href="{% url 'Galeria' %}"> <h2> Galeria </h2></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        {% block content %}
+        <!--Inicio cambios hero section-->
+        <header class="masthead" >
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Brinda una nueva vida a una mascota</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Encuentra en este momento a esa pieza faltante en tu vida, brinda un nuevo hogar a una mascota</p>
+                        <a class="btn btn-primary btn-xl" href="{% url 'Galeria' %}">Ir a adoptar</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Fin cambios hero section-->
+
+
+        <!--NUEVO Proceso de adopción en linea-->
+        <section class="page-section bg-primary" id="adopción-linea">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Conoce el como adoptar en linea.</h2>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section class="page-section bg-white" id="cap1">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-black mt-0">Selecciona Ir a adoptar o galeria en la parte superior.</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <img src="{% static 'Principal/assets/img/paso-1.png' %}" alt="Imagen señalando parte 1"width="800 px" height="600 px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="page-section bg-white" id="cap2">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-black mt-0">Selecciona la mascota para ver su información.</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <img src="{% static 'Principal/assets/img/paso-2.png' %}" alt="Imagen señalando parte 1"width="800 px" height="409 px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="page-section bg-white" id="cap3">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-black mt-0">Llena tus datos en el formulario para agendar tu cita.</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <img src="{% static 'Principal/assets/img/paso-3.png' %}" alt="Imagen señalando parte 1"width="800 px" height="370 px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="page-section bg-white" id="listo">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-black mt-0">Y, ¡listo!</h2>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+
+                <section class="page-section bg-primary" id="donativos">
+                    <div class="container px-4 px-lg-5">
+                            <div class="col-lg-8 text-left">
+                                <h2 class="text-white mt-0">Ayudanos con tu donativo en las siguientes cuentas.</h2>
+                            </div>
+                            <br>
+                            <div class="col-lg-8 text-left">
+                                <h2 class="text-white mt-0">BANORTE.</h2>
+                            </div>
+                            <div class="col-lg-8 text-left">
+                                <h3 class="text-black mt-0">Deposita en Farmacias del Ahorro, Oxxo, Telecomm, Soriana.
+                                    Tarjeta número 4189281044644111.</h3>
+                            </div>
+                            <br>
+                            <br>
+                        <div class="col-lg-8 text-left">
+                            <h2 class="text-white mt-0">BANREGIO.</h2>
+                        </div>
+                        <div class="col-lg-8 text-left">
+                            <h3 class="text-black mt-0">136-01012-001-1 Sucursal 136 CLABE 058320000001333819
+                                A nombre de Proyecto Frida, Fundación, Rescate Integral de Animales, A.C..</h3>
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+        <!-- INICIO DE CAMBIOS Adopción en linea-->
+        <section class="page-section bg-white" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">Conoce las ventajas de la adopción en linea</h2>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-house fs-1 text-green"></i></i></div>
+                            <h3 class="h4 mb-2">Comodidad</h3>
+                            <p class="text-muted mb-0">Conoce todas las mascotas que te están esperando, ¡Desde la comodidad de tu casa!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-check2-circle fs-1 text-green"></i></div>
+                            <h3 class="h4 mb-2">Rapido</h3>
+                            <p class="text-muted mb-0">Agenda tu cita en menos de 5 minutos para conocer el próximo miembro de la familia</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi bi-collection fs-1 text-green"></i></div>
+                            <h3 class="h4 mb-2">Variedad</h3>
+                            <p class="text-muted mb-0">Enamorate de nuevo al ver la gran cantidad de almas gemelas que se encuentran esperandote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <div> <a href="https://www.facebook.com/frida.asociacion">VISITA NUESTRA PAGINA DE FACEBOOK</a> </div>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div> <a href="https://www.hotelparaisocanino.com">Contamos con estancia canina, ¡Visitanos!</a> </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- FIN DE CAMBIOS-->
+
+
+        {% endblock %}
+        <!-- Footer NUEVO DE FRIDA-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - FRIDA A.C</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'Principal/js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

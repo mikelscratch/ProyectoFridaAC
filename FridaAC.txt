@@ -1,0 +1,13 @@
+
+Usuario: fridaACAdmin
+Correo: jorozco@proyectofrida.org.mx
+Contraseña: FridaAC!1
+
+¿Qué tan probable es que recomiendes nuestra aplicación a un amigo o conocido? 
+Del 1 al 10 
+Más comentarios adicionales.
+
+pedro.castaneda2635@academicos.udg.mx <---- correo del profesor
+Entregar antes del día 28 de Noviembre 2021
+
+Trabajado con: Django
